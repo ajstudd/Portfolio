@@ -7,7 +7,7 @@ function Header() {
   return (
     <div>
       <HStack alignItems="center" justifyContent="center" bg="gray.100">
-        <Heading>AJX</Heading>
+        <Heading textColor="gray.600">AJX</Heading>
       </HStack>
     </div>
   );

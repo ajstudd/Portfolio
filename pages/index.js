@@ -1,6 +1,6 @@
 import { Box, Text, Heading, VStack, Flex } from "@chakra-ui/react";
 import Header from "../components/Header";
-import {} from "react-icons/ai";
+import { MdConstruction } from "react-icons/md";
 export default function Home() {
   return (
     <div>
@@ -9,6 +9,7 @@ export default function Home() {
         <VStack>
           <Heading>Aapka Swagat hai</Heading>
           <Text>Website pe Kaam chalu hai</Text>
+          <MdConstruction fontSize="25" />
         </VStack>
       </Flex>
     </div>
