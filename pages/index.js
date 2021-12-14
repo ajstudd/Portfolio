@@ -6,39 +6,20 @@ import {
   VStack,
   SimpleGrid,
   Spacer,
+  flexbox,
+  Flex,
 } from "@chakra-ui/react";
+import {
+  AiOutlineInstagram,
+  AiOutlineTwitter,
+  AiOutlineMail,
+} from "react-icons/ai";
 export default function Home() {
   return (
     <div>
-      <HStack px={5} py={8} shadow="base" bg="gray.100">
-        <Heading fontSize={22}>Hedron</Heading>
-        <Spacer />
-        <HStack fontWeight="normal" spacing="4" cursor="pointer">
-          <Box onClick="">Home</Box>
-          <Box onClick="">Gallery</Box>
-          <Box onClick="">Portfolio</Box>
-          <Box onClick="">About</Box>
-          <Box onClick="">Contact</Box>
-        </HStack>
-      </HStack>
-      <HStack>
-        <Heading m="4" width="lg">
-          A picture is worth thousand words
-        </Heading>
-        <Box fontWeight="medium">-AJ</Box>
-        <Spacer />
-        <HStack px="10" spacing="50px">
-          <VStack>
-            <Box fontWeight="semibold">Partnership</Box>
-            <Box>Get in touch with us</Box>
-          </VStack>
-          <VStack>
-            <Box>Email</Box>
-            <Box>Instagram</Box>
-            <Box>Twitter</Box>
-          </VStack>
-        </HStack>
-      </HStack>
+      <Flex justifyContent="center" alignItems="center" height="100vh">
+        <Heading>Aapka Swagat hai</Heading>
+      </Flex>
     </div>
   );
 }
