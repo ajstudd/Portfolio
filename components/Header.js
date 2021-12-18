@@ -26,7 +26,7 @@ function Header() {
         <Spacer />
         <Box
           fontWeight="semibold"
-          fontSize="3xl"
+          fontSize="xl"
           textColor="gray.900"
           cursor="pointer"
           _hover={{
@@ -37,7 +37,7 @@ function Header() {
         </Box>
         <Box
           fontWeight="semibold"
-          fontSize="3xl"
+          fontSize="xl"
           textColor="gray.900"
           cursor="pointer"
           _hover={{
