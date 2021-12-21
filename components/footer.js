@@ -64,7 +64,13 @@ function footer() {
         <Box height="1px" width="full" bg="gray.700"></Box>
       </Center>
       <HStack py="-1" bg="gray.800" alignItems="center" justifyContent="center">
-        <Box textColor="white" fontWeight="light">
+        <Box
+          py="2"
+          textColor="white"
+          fontWeight="light"
+          userSelect="none"
+          _hover={{ textColor: `orange.200` }}
+        >
           Designed by AJ
         </Box>
       </HStack>

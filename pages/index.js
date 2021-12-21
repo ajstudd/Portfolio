@@ -12,10 +12,32 @@ export default function Home() {
         height="81vh"
         bgGradient="linear(to-r, #D4F3EF, #30475E)"
       >
-        <VStack>
-          <Heading>Aapka Swagat hai</Heading>
-          <Text>Website pe Kaam chalu hai</Text>
-          <MdConstruction fontSize="25" />
+        <VStack border="2px" w="xl" rounded="10">
+          <Heading
+            mt="3.5"
+            userSelect="none"
+            _hover={{
+              textColor: `gray.300`,
+            }}
+          >
+            Aapka Swagat hai
+          </Heading>
+          <Text
+            userSelect="none"
+            _hover={{
+              textColor: `gray.300`,
+            }}
+          >
+            Website pe Kaam chalu hai
+          </Text>
+          <Box
+            _hover={{
+              textColor: `gray.300`,
+            }}
+          >
+            <MdConstruction fontSize="25" />
+          </Box>
+          <Box mb="3.5" />
         </VStack>
       </Flex>
       <Footer />
