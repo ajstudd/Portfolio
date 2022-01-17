@@ -57,7 +57,7 @@ function modalpop() {
 
         <Modal isOpen={isOpen} onClose={onClose}>
           <ModalOverlay />
-          <ModalContent bg="white">
+          <ModalContent bg="gray.100">
             <ModalHeader textColor="red">Quotes</ModalHeader>
             <ModalBody textColor="black">{Quotes.Quotes[ram]}</ModalBody>
 

@@ -6,13 +6,14 @@ import {
   Divider,
   Center,
 } from "@chakra-ui/react";
+import { useRef } from "react";
 import { FiSend, FiInstagram, FiMail } from "react-icons/fi";
 import React from "react";
 
 function footer() {
   return (
     <div>
-      <HStack spacing="5" py="5" px="10" bg="gray.800">
+      <HStack spacing="5" py="5" px="10" bg="gray.800" id="contacts">
         <Box
           onClick={() => {
             window.open("https://t.me/ajstudd31");
