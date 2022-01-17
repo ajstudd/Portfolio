@@ -8,7 +8,7 @@ import {
   AspectRatio,
   Image,
 } from "@chakra-ui/react";
-import Modalpop from "../components/modalpop";
+
 import Header from "../components/Header";
 import Card from "../components/card";
 import { useRef } from "react";
