@@ -5,7 +5,7 @@ function card() {
     <div>
       <Box
         // width="2xl"
-        w={{ base: "sm", lg: "2xl" }}
+        w={{ base: "xs", md: "sm", lg: "2xl" }}
         // bgGradient={[
         //   "linear(to-tr, teal.300, yellow.400)",
         //   "linear(to-t, blue.200, teal.500)",

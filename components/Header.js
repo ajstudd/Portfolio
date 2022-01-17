@@ -43,7 +43,7 @@ function Header() {
         <Spacer />
         <Menu>
           <MenuButton
-            d={{ base: "initial", lg: "none" }}
+            d={{ base: "inherit", lg: "none" }}
             as={IconButton}
             fontSize={"xl"}
             aria-label="Options"
