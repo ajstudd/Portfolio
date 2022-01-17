@@ -21,7 +21,7 @@ export default function Home() {
       <Box bgGradient="linear(to-r, #D4F3EF, #30475E)">
         <Header />
         <Flex
-          position="relative"
+          // position="relative"
           justifyContent="center"
           alignItems="center"
           // backgroundImage="url('/images/kyuubi.png')"
