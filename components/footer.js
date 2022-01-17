@@ -28,7 +28,7 @@ function footer() {
         </Box>
         <Box
           onClick={() => {
-            window.open("https://www.instagram.com/sav__aj/");
+            window.open("https://www.instagram.com/ajx.me/");
           }}
           textColor="white"
           cursor="pointer"
