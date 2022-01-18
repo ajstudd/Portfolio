@@ -18,7 +18,10 @@ import { MdConstruction, MdArrowDownward } from "react-icons/md";
 export default function Home() {
   return (
     <div>
-      <Box bgGradient="linear(to-r, #D4F3EF, #30475E)">
+      <Box
+        bgGradient="linear(to-r, #D4F3EF, #30475E)"
+        w={{ base: "lg", md: "xl", lg: "full" }}
+      >
         <Header />
         <Flex
           // position="relative"
