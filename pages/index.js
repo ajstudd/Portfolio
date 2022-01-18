@@ -20,7 +20,7 @@ export default function Home() {
     <div>
       <Box
         bgGradient="linear(to-r, #D4F3EF, #30475E)"
-        w={{ base: "lg", md: "xl", lg: "full" }}
+        w={{ base: "lg",  lg: "full" }}
       >
         <Header />
         <Flex
