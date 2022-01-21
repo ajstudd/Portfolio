@@ -18,10 +18,7 @@ import { MdConstruction, MdArrowDownward } from "react-icons/md";
 export default function Home() {
   return (
     <div>
-      <Box
-        bgGradient="linear(to-r, #D4F3EF, #30475E)"
-        w={{ base: "lg",  lg: "full" }}
-      >
+      <Box bgGradient="linear(to-r, #D4F3EF, #30475E)">
         <Header />
         <Flex
           // position="relative"
@@ -31,7 +28,7 @@ export default function Home() {
           // bgGradient="linear(to-l, #7928CA, #FF0080)"
         >
           <VStack spacing="10px">
-            <VStack border="2px" w="xs" rounded="10">
+            <VStack border="2px" rounded="10">
               <Heading
                 mt="3.5"
                 userSelect="none"

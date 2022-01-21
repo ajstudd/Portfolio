@@ -43,7 +43,7 @@ function Header() {
         <Spacer />
         <Menu>
           <MenuButton
-            d={{ base: "inherit", lg: "none" }}
+            display={{ base: "inherit", lg: "none" }}
             as={IconButton}
             fontSize={"xl"}
             aria-label="Options"
@@ -51,7 +51,6 @@ function Header() {
           />
           <MenuList
             bgGradient="linear(to-r, #D4F3EF, #30475E)"
-            width={"md"}
             border={"none"}
             shadow={"none"}
           >
