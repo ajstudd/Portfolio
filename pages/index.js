@@ -18,7 +18,7 @@ import { MdConstruction, MdArrowDownward } from "react-icons/md";
 export default function Home() {
   return (
     <div>
-      <Box bgGradient="linear(to-r, #D4F3EF, #30475E)">
+      <Box bgGradient="linear(to-r, #D4F3EF, #30475E)" h="200vh">
         <Header />
         <Flex
           // position="relative"
@@ -72,10 +72,9 @@ export default function Home() {
         >
           !This Website is still under construction!
         </Text>
-        <Box mt="5" width="full">
-          <Footer />
-        </Box>
+        <Box mt="5" width="full"></Box>
       </Box>
+      <Footer />
     </div>
   );
 }
