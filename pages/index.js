@@ -17,35 +17,28 @@ import { MdConstruction, MdArrowDownward } from "react-icons/md";
 
 export default function Home() {
   return (
-    <div>
-      <Box bgGradient="linear(to-r, #D4F3EF, #30475E)" h="200vh">
+    <>
+      <Box bgGradient="linear(to-r, #D4F3EF, #30475E)" h="200vh" w="full">
         <Header />
-        <Flex justifyContent="center" alignItems="center">
-          <VStack>
-            <Heading
-              fontSize="8xl"
-              fontWeight="Bold"
-              textAlign="center"
-              color="gray.800"
-            >
-              Junaid Ahmad
-            </Heading>
+        <Flex justifyContent={"center"}>
+          <VStack
+            spacing="0"
+            px="10"
+            py="4"
+            fontSize={{ base: "5xl", lg: "8xl" }}
+            fontWeight="Bold"
+            textAlign="left"
+            color="gray.800"
+          >
+            <Text>Junaid Ahmad</Text>
 
-            <Heading
-              fontSize="8xl"
-              fontWeight="Bold"
-              textAlign="center"
-              color="gray.800"
-            >
-              Frontend Developer
-            </Heading>
-            <Box w="full"></Box>
+            <Text>Frontend Developer</Text>
           </VStack>
         </Flex>
 
         <Box mt="5" width="full"></Box>
       </Box>
       <Footer />
-    </div>
+    </>
   );
 }
