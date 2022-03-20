@@ -23,6 +23,7 @@ function Header() {
   return (
     <div>
       <HStack
+        h="20"
         py="5"
         px="10"
         // bgGradient="linear(to-r, #D4F3EF, #30475E)"
@@ -35,6 +36,7 @@ function Header() {
           cursor="pointer"
           _hover={{
             textColor: `gray.600`,
+            behavior: "smooth",
           }}
         >
           AJX

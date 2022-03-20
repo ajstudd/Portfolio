@@ -20,58 +20,29 @@ export default function Home() {
     <div>
       <Box bgGradient="linear(to-r, #D4F3EF, #30475E)" h="200vh">
         <Header />
-        <Flex
-          // position="relative"
-          justifyContent="center"
-          alignItems="center"
-          // backgroundImage="url('/images/kyuubi.png')"
-          // bgGradient="linear(to-l, #7928CA, #FF0080)"
-        >
-          <VStack spacing="10px">
-            <VStack border="2px" rounded="10">
-              <Heading
-                mt="3.5"
-                userSelect="none"
-                _hover={{
-                  textColor: `gray.300`,
-                }}
-              >
-                Aapka Swagat hai
-              </Heading>
-              {/* <Text
-                userSelect="none"
-                _hover={{
-                  textColor: `gray.300`,
-                }}
-              >
-                Get some life tips here
-              </Text> */}
-              <Box
-                _hover={{
-                  textColor: `gray.300`,
-                }}
-              >
-                <MdArrowDownward fontSize="25" />
-              </Box>
-              <Box mb="3.5" />
-            </VStack>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+        <Flex justifyContent="center" alignItems="center">
+          <VStack>
+            <Heading
+              fontSize="8xl"
+              fontWeight="Bold"
+              textAlign="center"
+              color="gray.800"
+            >
+              Junaid Ahmad
+            </Heading>
+
+            <Heading
+              fontSize="8xl"
+              fontWeight="Bold"
+              textAlign="center"
+              color="gray.800"
+            >
+              Frontend Developer
+            </Heading>
+            <Box w="full"></Box>
           </VStack>
         </Flex>
-        <Text
-          bgGradient="linear(to-r, #D4F3EF, #30475E)"
-          fontWeight="hairline"
-          userSelect="none"
-          _hover={{
-            textColor: `green`,
-          }}
-        >
-          !This Website is still under construction!
-        </Text>
+
         <Box mt="5" width="full"></Box>
       </Box>
       <Footer />

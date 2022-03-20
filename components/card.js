@@ -1,18 +1,10 @@
 import React from "react";
-import {
-  Box,
-  Image,
-  HStact,
-  Text,
-  HStack,
-  SimpleGrid,
-  Flex,
-} from "@chakra-ui/react";
+import { Box, Text, HStack, Flex } from "@chakra-ui/react";
 function card() {
   return (
-    <div>
+    <>
       <Box
-        w={{ base: "xs", lg: "xl" }}
+        w={{ base: "xs", lg: "full" }}
         shadow="lg"
         bgGradient="linear(to-l, #7928CA, #FF0080)"
         // border="2px"
@@ -38,7 +30,7 @@ function card() {
           </Flex>
         </HStack>
       </Box>
-    </div>
+    </>
   );
 }
 
