@@ -25,7 +25,7 @@ export default function Home() {
             spacing="0"
             px="10"
             py="4"
-            fontSize={{ base: "5xl", lg: "8xl" }}
+            fontSize={{ base: "4xl", lg: "8xl" }}
             fontWeight="Bold"
             textAlign="left"
             color="gray.800"
