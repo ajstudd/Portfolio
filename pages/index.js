@@ -75,7 +75,7 @@ export default function Home() {
               <HStack px="20" py="5" spacing={"5"}>
                 <Card>
                   <Text>Product Design</Text>
-                  <Flex alignItems="center" justifyContent="center" px="7">
+                  <Flex alignItems="center" justifyContent="center" px="4">
                     <Image
                       h="150px"
                       rounded="lg"

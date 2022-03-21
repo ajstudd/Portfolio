@@ -12,14 +12,15 @@ function card({ children }) {
           transition="all 0.3s"
           rounded="lg"
           opacity={"80%"}
-          _hover={{ opacity: `100%`, transform: `scale(1.5)`, mx: `80px` }}
+          _hover={{ opacity: `100%`, transform: `scale(1.5)`, mx: `70px` }}
           blur="30px"
         >
           <HStack
             justifyContent={"space-evenly"}
             alignContent={"space-evenly"}
             rounded={"lg"}
-            p="4"
+            py="4"
+            px="2"
             fontWeight={"semibold"}
             textColor={"gray.800"}
           >
