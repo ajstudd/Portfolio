@@ -18,7 +18,7 @@ import Footer from "../components/footer";
 export default function Home() {
   return (
     <>
-      <Box bgGradient="linear(to-r, #D4F3EF, #30475E)" h="200vh" w="full">
+      <Box bgGradient="linear(to-r, #D4F3EF, #30475E)" w="full">
         <Header />
 
         <Flex
@@ -51,15 +51,17 @@ export default function Home() {
                 Experienced in
               </Text>
             </Box>
+
             {[
               "React JS",
               "Next JS",
               "Chakra UI",
               "Node JS",
               "Figma",
-              "Redux",
+              "Mondo DB",
+              "Strapi CMS",
             ].map((item, index) => (
-              <Banner>{item}</Banner>
+              <Banner key={index}>{item}</Banner>
             ))}
           </HStack>
         </Flex>
@@ -124,8 +126,8 @@ export default function Home() {
           </Center>
         </Box>
         <Box mt="5" width="full"></Box>
+        <Footer />
       </Box>
-      <Footer />
     </>
   );
 }
