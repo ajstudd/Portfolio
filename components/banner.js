@@ -10,6 +10,8 @@ function banner({ children }) {
         rounded="lg"
         textAlign={"center"}
         p="2"
+        mx="2"
+        my={{ base: "2", lg: "0" }}
         fontSize={{ base: "sm", lg: "xl" }}
         color="white"
       >

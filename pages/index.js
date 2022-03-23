@@ -41,8 +41,8 @@ export default function Home() {
             <Text>Frontend Developer</Text>
           </VStack>
 
-          <HStack spacing={"5"}>
-            <Box>
+          <Flex flexFlow={{ base: "column", lg: "row" }} d="flex" mr="4">
+            <Box px="2">
               <Text
                 fontSize={"3xl"}
                 fontWeight="semibold"
@@ -63,7 +63,7 @@ export default function Home() {
             ].map((item, index) => (
               <Banner key={index}>{item}</Banner>
             ))}
-          </HStack>
+          </Flex>
         </Flex>
         <Box bg="gray.800" mt="10" color="white">
           <Center>
@@ -72,10 +72,10 @@ export default function Home() {
                 My Projects{" "}
               </Text>
 
-              <HStack px="20" py="5" spacing={"5"}>
+              <SimpleGrid columns={{ base: "1", lg: "3" }} spacingY="10px">
                 <Card>
                   <Text>Product Design</Text>
-                  <Flex alignItems="center" justifyContent="center" px="4">
+                  <Flex alignItems="center" justifyContent="center" px="7">
                     <Image
                       h="150px"
                       rounded="lg"
@@ -121,7 +121,7 @@ export default function Home() {
                     />
                   </Flex>
                 </Card>
-              </HStack>
+              </SimpleGrid>
             </VStack>
           </Center>
         </Box>

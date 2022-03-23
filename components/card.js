@@ -3,7 +3,12 @@ import { Box, Text, HStack, Flex } from "@chakra-ui/react";
 function card({ children }) {
   return (
     <>
-      <Flex justifyContent={"center"} scale={{ base: "sm", lg: "full" }}>
+      <Flex
+        justifyContent={"center"}
+        scale={{ base: "sm", lg: "full" }}
+        px="10"
+        py="6"
+      >
         <Box
           shadow="lg"
           bgGradient="linear(to-l, #e5989b, #ffcdb2)"
@@ -12,7 +17,7 @@ function card({ children }) {
           transition="all 0.3s"
           rounded="lg"
           opacity={"80%"}
-          _hover={{ opacity: `100%`, transform: `scale(1.5)`, mx: `70px` }}
+          _hover={{ opacity: `100%`, transform: `scale(1.5)` }}
           blur="30px"
         >
           <HStack
