@@ -13,7 +13,7 @@ import {
 import Header from "../components/Header";
 import Card from "../components/card";
 import Banner from "../components/banner";
-
+import About from "../components/about";
 import Footer from "../components/footer";
 export default function Home() {
   return (
@@ -40,8 +40,8 @@ export default function Home() {
 
             <Text>Frontend Developer</Text>
           </VStack>
-
-          <Flex flexFlow={{ base: "column", lg: "row" }} d="flex" mr="4">
+          <About />
+          <Flex flexFlow={{ base: "column", lg: "row" }} d="flex" mr="4" mt="4">
             <Box px="2">
               <Text
                 fontSize={"3xl"}
@@ -108,6 +108,32 @@ export default function Home() {
                       alt="Dan Abramov"
                     />
                   </Flex>
+                </Card>
+                <Card>
+                  <Text>Product Design</Text>
+                  <Flex alignItems="center" justifyContent="center" px="7">
+                    <Image
+                      h="150px"
+                      rounded="lg"
+                      w="full"
+                      src="resources\Calculator.png"
+                      alt="Dan Abramov"
+                    />
+                  </Flex>
+                </Card>
+                <Card>
+                  <VStack>
+                    <Text>Mock Websites</Text>
+                    <Flex alignItems="center" justifyContent="center" px="7">
+                      <Image
+                        h="150px"
+                        rounded="lg"
+                        w="full"
+                        src="resources\NetlifyMock.png"
+                        alt="Dan Abramov"
+                      />
+                    </Flex>
+                  </VStack>
                 </Card>
                 <Card>
                   <Text>Product Design</Text>
