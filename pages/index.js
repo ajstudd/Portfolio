@@ -13,10 +13,11 @@ import head from "next/head";
 import Header from "../components/Header";
 import Card from "../components/card";
 import Banner from "../components/banner";
-
+import { useState } from "react";
 import About from "../components/about";
 import Footer from "../components/footer";
 export default function Home() {
+  const [contact, setContact] = useState(false);
   return (
     <>
       {/* Imported head from next and created a title to show in browser */}

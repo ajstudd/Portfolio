@@ -54,44 +54,46 @@ const Item = ({ title, subItem }) => {
 
 export default function faq() {
   return (
-    <Box w="full">
-      <Header />
-      <VStack mb="10">
-        <Heading mb="5">FAQs</Heading>
-        <Center>
-          <Box ml="40" userSelect="none" minW="xl">
-            <Stack maxW="sm" py={12} px={6} bg="gray.200" rounded={"lg"}>
-              <Item
-                title={"What is your major domain?"}
-                subItem={"Frontend and UI Design"}
-              />
-              <Item
-                title={"Where did you learn to code?"}
-                subItem={"From School, college, internet and friends"}
-              />
-              <Item
-                title={"What drives you in this field?"}
-                subItem={
-                  "My Major is Design and Development of UI because I love to create stuff"
-                }
-              />
-              <Item
-                title={"What is your favourite framework?"}
-                subItem={"React"}
-              />
-              <Item
-                title={"What is your experience with React?"}
-                subItem={"Around 1 and a half years"}
-              />
-              <Item
-                title={"What are your favourite libraries?"}
-                subItem={"Next Js, Chakra UI"}
-              />
-            </Stack>
-          </Box>
-        </Center>
-      </VStack>
-      <Footer />
-    </Box>
+    <>
+      <Box w="full">
+        <Header />
+        <VStack mb="10">
+          <Heading mb="5">FAQs</Heading>
+          <Center>
+            <Box ml="40" userSelect="none" minW="xl">
+              <Stack maxW="sm" py={12} px={6} bg="gray.200" rounded={"lg"}>
+                <Item
+                  title={"What is your major domain?"}
+                  subItem={"Frontend and UI Design"}
+                />
+                <Item
+                  title={"Where did you learn to code?"}
+                  subItem={"From School, college, internet and friends"}
+                />
+                <Item
+                  title={"What drives you in this field?"}
+                  subItem={
+                    "My Major is Design and Development of UI because I love to create stuff"
+                  }
+                />
+                <Item
+                  title={"What is your favourite framework?"}
+                  subItem={"React"}
+                />
+                <Item
+                  title={"What is your experience with React?"}
+                  subItem={"Around 1 and a half years"}
+                />
+                <Item
+                  title={"What are your favourite libraries?"}
+                  subItem={"Next Js, Chakra UI"}
+                />
+              </Stack>
+            </Box>
+          </Center>
+        </VStack>
+        <Footer />
+      </Box>
+    </>
   );
 }

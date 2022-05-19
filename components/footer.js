@@ -6,7 +6,7 @@ import {
   Divider,
   Center,
 } from "@chakra-ui/react";
-import { useRef } from "react";
+
 import Link from "next/link";
 import { FiSend, FiInstagram, FiMail } from "react-icons/fi";
 import React from "react";
@@ -51,6 +51,7 @@ function footer() {
         >
           <FiMail />
         </Box>
+
         <Spacer />
         <Link passHref href={"/feedback"}>
           <Box
