@@ -7,6 +7,7 @@ import {
   Center,
 } from "@chakra-ui/react";
 import { useRef } from "react";
+import Link from "next/link";
 import { FiSend, FiInstagram, FiMail } from "react-icons/fi";
 import React from "react";
 
@@ -51,15 +52,17 @@ function footer() {
           <FiMail />
         </Box>
         <Spacer />
-        <Box
-          textColor="white"
-          cursor="pointer"
-          _hover={{
-            textColor: `gray.600`,
-          }}
-        >
-          Feedback
-        </Box>
+        <Link passHref href={"/feedback"}>
+          <Box
+            textColor="white"
+            cursor="pointer"
+            _hover={{
+              textColor: `gray.600`,
+            }}
+          >
+            Feedback
+          </Box>
+        </Link>
       </HStack>
       <Center>
         <Box height="1px" width="full" bg="gray.700"></Box>

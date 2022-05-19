@@ -12,6 +12,7 @@ import {
   IconButton,
 } from "@chakra-ui/react";
 import React, { useRef } from "react";
+import Link from "next/link";
 import {
   IoReorderThree,
   IoPersonOutline,
@@ -29,19 +30,20 @@ function Header() {
         // bgGradient="linear(to-r, #D4F3EF, #30475E)"
         spacing="5"
       >
-        <Box
-          fontWeight="semibold"
-          fontSize="3xl"
-          textColor="gray.800"
-          cursor="pointer"
-          _hover={{
-            textColor: `gray.600`,
-            behavior: "smooth",
-          }}
-        >
-          AJX
-        </Box>
-
+        <Link passHref href={"/"}>
+          <Box
+            fontWeight="semibold"
+            fontSize="3xl"
+            textColor="gray.800"
+            cursor="pointer"
+            _hover={{
+              textColor: `gray.600`,
+              behavior: "smooth",
+            }}
+          >
+            AJX
+          </Box>
+        </Link>
         <Spacer />
         <Menu>
           <MenuButton
@@ -67,9 +69,11 @@ function Header() {
             >
               Contacts
             </MenuItem>
-            <MenuItem icon={<IoChatbubblesOutline />} fontWeight={"semibold"}>
-              FAQs
-            </MenuItem>
+            <Link passHref href={"/faq"}>
+              <MenuItem icon={<IoChatbubblesOutline />} fontWeight={"semibold"}>
+                FAQs
+              </MenuItem>
+            </Link>
           </MenuList>
         </Menu>
         {/* Responsive */}
@@ -93,17 +97,19 @@ function Header() {
           >
             Contact
           </Box>
-          <Box
-            fontWeight="semibold"
-            fontSize="xl"
-            textColor="gray.900"
-            cursor="pointer"
-            _hover={{
-              textColor: `gray.700`,
-            }}
-          >
-            FAQs
-          </Box>
+          <Link passHref href={"/faq"}>
+            <Box
+              fontWeight="semibold"
+              fontSize="xl"
+              textColor="gray.900"
+              cursor="pointer"
+              _hover={{
+                textColor: `gray.700`,
+              }}
+            >
+              FAQs
+            </Box>
+          </Link>
         </HStack>
       </HStack>
     </div>

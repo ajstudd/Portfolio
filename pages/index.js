@@ -13,15 +13,16 @@ import head from "next/head";
 import Header from "../components/Header";
 import Card from "../components/card";
 import Banner from "../components/banner";
+
 import About from "../components/about";
 import Footer from "../components/footer";
 export default function Home() {
   return (
     <>
-    {/* Imported head from next and created a title to show in browser */}
-    <head>
-      <title>Junaid Ahmad | Frontend</title>
-    </head>
+      {/* Imported head from next and created a title to show in browser */}
+      <head>
+        <title>Junaid Ahmad | Frontend</title>
+      </head>
       <Box bgGradient="linear(to-r, #D4F3EF, #30475E)" w="full">
         <Header />
 
